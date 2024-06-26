@@ -1,10 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body {
-  font-family: var(--font-chivo), sans-serif;
+.custom-black-btn {
+  background-color: black !important;
+  color: white !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-libre_franklin), sans-serif;
+.custom-black-btn:hover {
+  background-color: gray !important;
 }
