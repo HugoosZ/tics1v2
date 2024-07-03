@@ -31,7 +31,7 @@ export default function DbForm() {
 
   const sendDecibelLevel = async (decibel: string) => {
     try {
-      const response = await fetch('http://18.211.89.243:2000/send-decibel', {
+      const response = await fetch('https://apitics.onrender.com/send-decibel', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
