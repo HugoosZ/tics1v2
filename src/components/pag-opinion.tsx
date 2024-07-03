@@ -29,7 +29,7 @@ export default function PagOpinion() {
     };
 
     try {
-      const response = await fetch("https://apitics.onrender.com/opinions", config);
+      const response = await fetch("localhost:2000/opinions", config);
       if (!response.ok) {
         throw new Error("Error sending opinion");
       }
@@ -51,7 +51,7 @@ export default function PagOpinion() {
     };
 
     try {
-      const response = await fetch("https://apitics.onrender.com/opinions", config);
+      const response = await fetch("localhost:2000/opinions", config);
       const result = await response.json();
       setOpinions(result.allOpinions);
     } catch (error) {
